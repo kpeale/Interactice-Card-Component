@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Card</title>
+    <!--stylesheet-->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+ 
+    <div class="interactive__cardsection">
+        <div class="interactive__cardsection-holder">
+          
+         </div>
+        <div>
+          <div class="interactive__cardsection-imgbx" >
+            <img src="images/bg-card-front.png" alt="the front of a transaction card" class="interactive__cardsection-img1">
+            <div class="interactive__cardsection-details">
+              
+            </div>
+            
+          </div>
+          <div class="interactive__cardsection-imgbx2">
+            <img src="images/bg-card-back.png" alt="the back of a transaction card" class="interactive__cardsection-img1">
+            <div class="interactive__backcardsection-details">
+             
+            </div>
+          </div>
+      </div>
+      
+      
+
+
+        <div class="interactive__cardsection-form">
+            <form action="#" >
+              <div class="interactive__cardsection_form ">
+                <label for="cardholdername" class="card-name">CARDHOLDER NAME</label>
+                <input type="text" placeholder="e.g Jane Appleseed" id="cardholder-name" name="cardholdername" required>
+                <div class="errorMessageCardName"></div>
+
+                <label for="cardnumber" class="cardnum">CARDHOLDER NUMBER</label>
+                <input type="text" placeholder="e.g 0000 0000 00000000" id="card-number" name="cardnumber" required>
+                <div class="errorMessageDiv"></div>
+
+                <label for="exp.date" id="date">EXP.DATE (MM/YY)</label>
+                <label for="cvc" id="cvc-num">CVC</label> <br>
+
+                <input type="number" placeholder="MM" name="exp.date" id="month" required >
+                 <input type="year" name="exp.date" id="year" placeholder="YY" required>
+                <input type="number" placeholder="eg 123" name="cvc" id="cvc" required>
+                <div class="errorMessageForMonth"></div>
+                <div class="errorMessageForCVC">
+                  <!-- <p class="errorMessageParagraphForCVC">you</p> -->
+                </div>
+             </div>
+
+                <a href="#" class="btn">Confirm</a>
+            </form>
+        </div>
+    </div>
+
+    <div class="completed-section">
+      <div class="completed-sectionimg-bx">
+       <img src="images/icon-complete.svg" alt="complete icon">
+      </div>
+      <div class="completedsectiontext-bx">
+       <h3>THANK YOU!</h3>
+       <p>We have added your card details</p>
+      </div>
+   </div>
+    
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
